@@ -1,6 +1,6 @@
 module.exports = function (sails) {
-    const EXEC    = require('./lib/exec.js');
     const CONNECT = require('./lib/connection/connect.js');
+    let   exec    = require('./lib/exec.js');
 
     // Called when Gladys wakes up :)
     gladys.on('ready', function () {
@@ -9,6 +9,6 @@ module.exports = function (sails) {
 
     // Called when a user changes a device's state
     return {
-        EXEC
+        exec
     };
 };
