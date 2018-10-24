@@ -1,5 +1,5 @@
 {
-  "name": "mqttArduino",
+  "name": "mqtt-Arduino",
   "version": "0.0.0",
   "description": "Gladys hooks for sending mqtt request to Arduino.",
   "main": "index.js",
