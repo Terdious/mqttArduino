@@ -1,8 +1,15 @@
-module.exports = function (sails) {
+/* ENTRY POINT OF THE GLADYS MODULE */
 
-    var exec = require('./lib/exec.js');
+const initMqttConnection = require('./lib/connection/initMqttConnection');
+const exec               = require('./lib/exec');
+
+module.exports = function () {
+    // The "ready" event is fired when Gladys has loaded up
+    gladys.on('ready', function () {
+        initMqttConnection();
+    });
 
     return {
-        exec,
+        exec // Called when someone performs an action in the devices control panel
     };
 };
