@@ -1,5 +1,7 @@
 *Don't forget to **install `node_modules`**!*
 
+The sources of the modules must be placed in a folder called `mqtt-controller` in the `api/hooks` folder of Gladys.
+
 # Gladys Parameters
 In order to connect to your MQTT broker this module uses three (3) Gladys parameters:
 * `MQTT_URL`: the address of your MQTT broker, including the protocol used (`mqtt` or `mqtts`) and its port (`1883` by default);
