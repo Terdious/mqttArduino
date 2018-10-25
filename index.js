@@ -1,3 +1,5 @@
+str test ="" 
+
 module.exports = function () {
     const connect = require('./lib/connection/connect.js');
     const exec    = require('./lib/exec.js');
