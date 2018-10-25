@@ -1,4 +1,4 @@
-string test ="" 
+let test ="" 
 
 module.exports = function () {
     const connect = require('./lib/connection/connect.js');
