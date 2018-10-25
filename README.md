@@ -31,8 +31,8 @@ This device contains two `DeviceType`s set as following:
 
 Identifier | Type | Min | Max | Display
 -----------|------|-----|-----|--------
-desk/1|pattern|0|9|[ x ]
-desk/1|brightness|0|100|[ x ]
+desk/1|pattern|0|9|True
+desk/1|brightness|0|100|True
 
 *These two `DeviceType`s represent two parameters of a unique LED strip, but you could add another one by creating a new `Identifier`.*
 
