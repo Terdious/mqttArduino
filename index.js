@@ -4,11 +4,15 @@ module.exports = function () {
 
     // Called when Gladys wakes up :)
     gladys.on('ready', function () {
+sails.log.info(`Arduino - Successfully connected to MQTT: OK11`);
         connect();
+sails.log.info(`Arduino - Successfully connected to MQTT: OK12`);
     });
 
     // Called when a user changes a device's state
     return {
-        exec
+sails.log.info(`Arduino - Successfully connected to MQTT: OK13`);
+        exec();
+sails.log.info(`Arduino - Successfully connected to MQTT: OK14`);
     };
 };
