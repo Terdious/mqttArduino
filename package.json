@@ -1,12 +1,12 @@
 {
-  "name": "mqtt-Arduino",
+  "name": "mqtt-controller",
   "version": "0.0.0",
-  "description": "Gladys hooks for sending mqtt request to Arduino.",
+  "description": "Allows controlling devices via MQTT.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Terdious, Zeshi, Foxwoud",
+  "author": "Terdious and Jessy",
   "license": "",
   "dependencies": {
     "mqtt": "^2.14.0"

@@ -1,3 +1,4 @@
-# exclude IDE files
 .idea
+box
 node_modules
+*.iml

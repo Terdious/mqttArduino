@@ -1,20 +1,15 @@
-let test ="" 
+/* ENTRY POINT OF THE GLADYS MODULE */
+
+const initMqttConnection = require('./lib/connection/initMqttConnection');
+const exec               = require('./lib/exec');
 
 module.exports = function () {
-    const connect = require('./lib/connection/connect.js');
-    const exec    = require('./lib/exec.js');
-
-    // Called when Gladys wakes up :)
+    // The "ready" event is fired when Gladys has loaded up
     gladys.on('ready', function () {
-sails.log.info(`Arduino - Successfully connected to MQTT: OK11`);
-        connect();
-sails.log.info(`Arduino - Successfully connected to MQTT: OK12`);
+        initMqttConnection();
     });
 
-    // Called when a user changes a device's state
     return {
-sails.log.info(`Arduino - Successfully connected to MQTT: OK13`);
-        exec
-sails.log.info(`Arduino - Successfully connected to MQTT: OK14`);
+        exec // Called when someone performs an action in the devices control panel
     };
 };
